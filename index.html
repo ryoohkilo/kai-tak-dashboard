@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>啟德體育園每日活動資訊</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-main">
+                    <h1 class="header-title">啟德體育園活動資訊</h1>
+                    <div class="header-subtitle">Kai Tak Sports Park Events Dashboard</div>
+                </div>
+                <div class="header-info">
+                    <div class="current-time" id="currentTime"></div>
+                    <div class="current-date" id="currentDate"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <!-- Today's Events -->
+            <section class="today-events-section">
+                <h2 class="section-title">今日活動</h2>
+                <div class="events-grid" id="todayEventsList"></div>
+            </section>
+
+
+            <!-- Today's Status Section -->
+            <section class="status-section events-section">
+                <h2 class="section-title">最新活動</h2>
+                <div class="events-grid" id="allEventsList"></div>
+            </section>
+
+           
+
+            <!-- Daily Facilities Section -->
+            <section class="facilities-section">
+                <h2 class="section-title">設施開放狀況</h2>
+                <div class="facilities-grid">
+                    <div class="facility-card">
+                        <div class="facility-header">
+                            <h3>啟德主場館</h3>
+                            <div class="facility-capacity">50,000席</div>
+                        </div>
+                        <div class="facility-content">
+                            <div class="facility-hours">開放時間：07:00 - 23:00</div>
+                            <div class="facility-access limited">僅在活動期間對公眾開放</div>
+                            <p class="facility-description">可伸縮屋頂的多功能主場館</p>
+                        </div>
+                    </div>
+
+                    <div class="facility-card">
+                        <div class="facility-header">
+                            <h3>啟德體藝館</h3>
+                            <div class="facility-capacity">10,000席</div>
+                        </div>
+                        <div class="facility-content">
+                            <div class="facility-hours">開放時間：07:00 - 23:00</div>
+                            <div class="facility-access limited">有限度公眾預訂</div>
+                            <p class="facility-description">室內多功能體育場館</p>
+                        </div>
+                    </div>
+
+                    <div class="facility-card">
+                        <div class="facility-header">
+                            <h3>啟德青年運動場</h3>
+                            <div class="facility-capacity">5,000席</div>
+                        </div>
+                        <div class="facility-content">
+                            <div class="facility-hours">開放時間：07:00 - 22:30</div>
+                            <div class="facility-access open">免費開放：07:00-10:00, 12:00-15:00</div>
+                            <p class="facility-description">9條跑道的田徑場，適合社區運動</p>
+                        </div>
+                    </div>
+
+                    <div class="facility-card">
+                        <div class="facility-header">
+                            <h3>啟德零售館</h3>
+                            <div class="facility-capacity">700,000平方呎</div>
+                        </div>
+                        <div class="facility-content">
+                            <div class="facility-hours">開放時間：10:00 - 22:00</div>
+                            <div class="facility-access open">完全開放</div>
+                            <p class="facility-description">超過200間商店及70間餐廳</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Transportation Section -->
+            <section class="transport-section">
+                <h2 class="section-title">交通資訊</h2>
+                <div class="transport-grid">
+                    <div class="transport-card">
+                        <div class="transport-icon">🚇</div>
+                        <h3>港鐵</h3>
+                        <div class="mtr-stations">
+                            <div class="mtr-station">
+                                <strong>啟德站</strong> - 屯馬綫<br>
+                                <small>前往啟德體藝館的最佳選擇</small>
+                            </div>
+                            <div class="mtr-station">
+                                <strong>宋皇臺站</strong> - 屯馬綫<br>
+                                <small>前往啟德主場館及青年運動場的最佳選擇</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="transport-card">
+                        <div class="transport-icon">🚌</div>
+                        <h3>巴士</h3>
+                        <p>超過60條巴士路線服務周邊地區</p>
+                    </div>
+
+                    <div class="transport-card">
+                        <div class="transport-icon">🚗</div>
+                        <h3>停車場</h3>
+                        <p>體育館停車場及體藝館停車場</p>
+                    </div>
+
+                    <div class="transport-card">
+                        <div class="transport-icon">🚕</div>
+                        <h3>的士</h3>
+                        <p>G/F啟德零售館2座設有的士站</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section class="contact-section">
+                <h2 class="section-title">聯絡資訊</h2>
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <h3>官方網站</h3>
+                        <a href="https://kaitaksportspark.com.hk" target="_blank" class="btn btn--primary">
+                            訪問官方網站
+                        </a>
+                    </div>
+                    <div class="contact-card">
+                        <h3>地址</h3>
+                        <p>九龍啟德承啟道38號</p>
+                    </div>
+                    <div class="contact-card">
+                        <h3>電話</h3>
+                        <p>+852 9592 2585</p>
+                    </div>
+                    <div class="contact-card">
+                        <h3>電郵</h3>
+                        <p>mice@kaitaksportspark.com.hk</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 啟德體育園 Kai Tak Sports Park. 版權所有。</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
